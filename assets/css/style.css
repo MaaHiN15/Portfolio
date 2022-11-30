@@ -4,17 +4,21 @@ Font Import
 
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@600&family=Syne+Mono&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
 
 /* ----------------------------------------------------------
 Root variable declaration
 -------------------------------------------------------------*/
 :root{
-  --body-font : 'Chakra Petch', sans-serif;;
+  --body-font : 'Chakra Petch', sans-serif;
   --head-font :  'Syne Mono', monospace;
-	--lgreen: hsla(157, 52%, 72%, 1);
-	--dgreen: rgba(22, 39, 39, 1);
-	--white: rgba(245, 245, 245, 1);
-  --black:rgb(19, 31, 26);
+	--scolor: #DCDCDC;
+	--mcolor: #CFD0D0;
+	--lcolor: #3C434B;
+  --xlcolor:#2F363A;
+  --xxlcolor: #181d1d;
+  --lgreen: #92ddc0ff;
+  --dgreen: #162727ff;
 }
 
 
@@ -23,14 +27,18 @@ Root variable declaration
 --------------------------------------------------------------*/
 body {
   font-family: var(--body-font);
-    color:var(--white);
+    color:var(--mcolor);
     word-spacing: 2px;
-    letter-spacing: 1px;
+    letter-spacing: 1.5px;
 }
 
 
-h1,
-h3,
+h1{
+  font-family: 'Orbitron', sans-serif;
+}
+h3{
+  font-family: var(--body-font);
+}
 h4,
 h5,
 h6 {
@@ -53,7 +61,7 @@ h2{
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: var(--dgreen);
+  background: var(--xlcolor);
   width: 40px;
   height: 40px;
   border-radius: 50px;
@@ -67,8 +75,8 @@ h2{
 }
 
 .back-to-top:hover {
-  background: var(--lgreen);
-  color: #fff;
+  background: var(--scolor);
+  color: var(--xxlcolor);
 }
 
 .back-to-top.active {
@@ -89,7 +97,7 @@ h2{
   z-index: 9997;
   transition: all 0.5s;
   padding: 0 15px;
-  background: var(--black);
+  background: rgb(0, 0, 0);
   overflow-y: auto;
 }
 
@@ -119,7 +127,7 @@ h2{
 #header .profile .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: var(--black);
+  background: var(--xlcolor);
   color: #fff;
   line-height: 1;
   padding: 8px 0;
@@ -132,8 +140,8 @@ h2{
 }
 
 #header .profile .social-links a:hover {
-  background: var(--dgreen);
-  color: var(--lgreen);
+  background: var(--mcolor);
+  color: var(--lcolor);
   text-decoration: none;
 }
 
@@ -239,13 +247,30 @@ h2{
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../img/hero-bg.jpg") top center;
+  background: url("../img/pirate\ full\ size.svg") top center;
   background-size: cover;
 }
 
+@media (max-width: 768px) {
+  #hero {
+    width: 100%;
+    height: 100vh;
+    background: url("../img/background\ pirate.svg") top center;
+    background-size: cover;
+  }
+  #hero .hero-container {
+    position: relative;
+    z-index: 2;
+    min-width: 300px;
+    padding-top: 100%;
+    text-align: right;
+  }
+  
+}
+  
 #hero:before {
   content: "";
-  background: rgba(5, 13, 24, 0.3);
+  background: #050d184d;
   position: absolute;
   bottom: 0;
   top: 0;
@@ -262,6 +287,7 @@ h2{
 
 #hero h1 {
   margin: 0 0 10px 0;
+  padding-left: 0;
   font-size: 64px;
   font-weight: 700;
   line-height: 56px;
@@ -310,7 +336,7 @@ section {
 }
 
 .section-bg {
-  background: var(--white);
+  background: var(--xxlcolor);
 }
 
 .section-title {
@@ -323,7 +349,7 @@ section {
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
-  color: var(--lgreen);
+  color: var(--mcolor);
 }
 
 .section-title h2::after {
@@ -331,9 +357,9 @@ section {
   position: absolute;
   display: flex;
   align-items: center;
-  width: 600px;
+  width: 645px;
   height: 3px;
-  background: var(--lgreen);
+  background: var(--mcolor);
   bottom: 0;
   left: 0;
 }
@@ -346,13 +372,14 @@ section {
 # About
 --------------------------------------------------------------*/
 .about{
-background-color: var(--dgreen);
+background-color: var(--xxlcolor);
+border: 1px solid var(--xlcolor);
 }
 
 .about .content h3 {
   font-weight: 700;
   font-size: 26px;
-  color:#176c58;
+  color: var(--mcolor);
 }
 
 .about .content ul {
@@ -455,16 +482,36 @@ i.respons {
 	background-color: var(--dgreen);
 } */
 .skil{
-  background-color: var(--dgreen);
+  background-color: var(--xxlcolor);
+  border: 1px solid var(--xlcolor);
 }
 
 .skill-set{
 	margin-top:40px;
 	margin-bottom:40px;
-	color: var(--dgreen);
+	color: var(--scolor);
 }
 .heads{
+  text-align: center;
+  color: var(--scolor);
+}
 
+.items{
+  padding: 15px;
+  border-radius: 20px;
+  transition: 1s;
+}
+
+.items:hover{
+  transform: scale(1.05);
+
+}
+
+.skill-icon{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 30px;
 }
 
 .ic{
@@ -476,15 +523,20 @@ i.respons {
 	text-align: center;
 	line-height:70px;
 	font-size: 40px;
-	color: var(--dgreen);
+	color: var(--lgreen);
 	border-radius: 10px;
-	box-shadow:0 0 0 0 var(--lgreen);
+	box-shadow:0 0 0 0 var(--dgreen);
 	margin-bottom:20px;
 	-webkit-transition:all .3s ease-out;
 	transition:all .3s ease-out;
-	border: 2px solid var(--lgreen);
-	color: var(--dgreen);
+	border: 2px solid var(--xlcolor);
 }
+.ichover{
+  color: var(--dgreen);
+  background-color: var(--lgreen);
+  border: 2px solid var(--scolor);
+}
+
 
 
 /*--------------------------------------------------------------
@@ -492,6 +544,7 @@ i.respons {
 --------------------------------------------------------------*/
 .facts {
   padding-bottom: 30px;
+  background-color: var(--xxlcolor);
 }
 
 .facts .count-box {
@@ -541,6 +594,10 @@ i.respons {
 /*--------------------------------------------------------------
 # Skills
 --------------------------------------------------------------*/
+.skills{
+  border: 1px solid var(--lcolor);
+}
+
 .skills .progress {
   height: 60px;
   display: block;
@@ -555,7 +612,7 @@ i.respons {
   display: block;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
-  color: #050d18;
+  color: var(--scolor);
 }
 
 .skills .progress .skill .val {
@@ -564,7 +621,7 @@ i.respons {
 }
 
 .skills .progress-bar-wrap {
-  background: #dce8f8;
+  background: var(--lcolor);
   height: 10px;
 }
 
@@ -572,7 +629,7 @@ i.respons {
   width: 1px;
   height: 10px;
   transition: 0.9s;
-  background-color: #149ddd;
+  background-color: var(--lgreen);
 }
 
 /*--------------------------------------------------------------
@@ -584,6 +641,7 @@ i.respons {
   margin-top: 20px;
   margin-bottom: 20px;
   color: #050d18;
+  background-color: var(--xxlcolor);
 }
 
 .resume .resume-item {
