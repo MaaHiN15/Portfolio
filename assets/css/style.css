@@ -75,9 +75,14 @@ h2{
 }
 
 .back-to-top:hover {
-  background: var(--scolor);
-  color: var(--xxlcolor);
+  background: var(--mcolor);
+  color: black;
 }
+
+.back-to-top i:hover {
+  color: black;
+}
+
 
 .back-to-top.active {
   visibility: visible;
@@ -105,6 +110,7 @@ h2{
   margin: 15px auto;
   display: block;
   width: 120px;
+  height: 125px;
   border: 8px solid #353742;
 }
 
@@ -141,7 +147,7 @@ h2{
 
 #header .profile .social-links a:hover {
   background: var(--mcolor);
-  color: var(--lcolor);
+  color: var(--dgreen);
   text-decoration: none;
 }
 
@@ -262,10 +268,23 @@ h2{
     position: relative;
     z-index: 2;
     min-width: 300px;
-    padding-top: 100%;
+    padding-top: 600px;
     text-align: right;
   }
   
+}
+
+@media (min-width: 768px) {
+#hero .square{
+  margin-left: 250px;
+  width: 1300px;
+  height: 800px;
+  flex-direction: column-reverse;
+  padding-top: 300px;
+  padding-left: 200px;
+
+  color: rgba(255, 255, 255, 0.107);
+}
 }
   
 #hero:before {
@@ -292,6 +311,11 @@ h2{
   font-weight: 700;
   line-height: 56px;
   color: #fff;
+}
+
+.hero-container h6{
+  font-family: 'Orbitron', sans-serif ;
+  color: white;
 }
 
 #hero p {
@@ -412,75 +436,7 @@ border: 1px solid var(--xlcolor);
 /*--------------------------------------------------------------
 # Skills
 --------------------------------------------------------------*/
-/* .services-skill {
-	margin-top:80px;
-	margin-bottom:40px;
-	color: var(--dgreen);
-	background-color: var(--dgreen);
-}
-.services-skill .skill-icon {
-	position: relative;
-	width:70px;
-	height:70px;
-	justify-content: center;
-	align-items: center;
-	padding-left: 10px;
-	text-align: center;
-	line-height:70px;
-	font-size: 40px;
-	color: var(--dgreen);
-	border-radius: 10px;
-	box-shadow:0 0 0 0 var(--lgreen);
-	margin-bottom:20px;
-	-webkit-transition:all .3s ease-out;
-	transition:all .3s ease-out;
-	border: 2px solid var(--white);
-	color: var(--lgreen);
-}
-.services-skill .item:hover .skill-icon {
-	background: var(--white);
-	border: 1px solid var(--white);
-}
-.services-skill .item [class*=fa] {
-	-webkit-transition:all .3s ease-out;
-	transition:all .3s ease-out;
-}
-.services-skill .item:hover [class*=fa] {
-	-webkit-transform:scale(1.2);
-	transform:scale(1.2);
-	-webkit-transition:all .3s ease-out;
-	transition:all .3s ease-out;
-	color:var(--lgreen);
-}
-.features-wrapper {
-	margin:70px 0 0;
-}
-i.respons {
-	position:fixed	;
-	width:35px;
-	height:35px;
-	margin:0 auto;
-	line-height:35px;
-	text-align:center;
-	font-size:15px;
-	color:var(--dgreen);
-	border-radius:50%;
-	-webkit-transition:all .3s ease-out;
-	transition:all .3s ease-out;
-	border:1px solid var(--dgreen);
-	color: var(--dgreen);
-}
-.arrow-section{
-	color: var(--dgreen);
-	font-size: 16px;
-	text-transform:uppercase;
-	letter-spacing: 10px;
-	padding-bottom:0px;
-	font-weight: bold;
-}
-.service-class{
-	background-color: var(--dgreen);
-} */
+
 .skil{
   background-color: var(--xxlcolor);
   border: 1px solid var(--xlcolor);
@@ -495,6 +451,16 @@ i.respons {
   text-align: center;
   color: var(--scolor);
 }
+
+.headsHover{
+  color: var(--lgreen);
+}
+
+.borderHover{
+  border-radius: 50px;
+  background: linear-gradient(315deg, #161a1a, #1a1f1f);
+  box-shadow:  -38px -38px 77px #111515,
+               38px 38px 77px #1f2525;}
 
 .items{
   padding: 15px;
@@ -592,7 +558,7 @@ i.respons {
 }
 
 /*--------------------------------------------------------------
-# Skills
+# languages
 --------------------------------------------------------------*/
 .skills{
   border: 1px solid var(--lcolor);
@@ -635,19 +601,24 @@ i.respons {
 /*--------------------------------------------------------------
 # Resume
 --------------------------------------------------------------*/
+.resume{
+  background-color: var(--xxlcolor);
+  border: 1px solid var(--lcolor);
+}
+
 .resume .resume-title {
   font-size: 26px;
   font-weight: 700;
   margin-top: 20px;
   margin-bottom: 20px;
-  color: #050d18;
+  color: var(--lgreen);
   background-color: var(--xxlcolor);
 }
 
 .resume .resume-item {
   padding: 0 0 20px 20px;
   margin-top: -2px;
-  border-left: 2px solid #1f5297;
+  border-left: 2px solid var(--lcolor);
   position: relative;
 }
 
@@ -657,13 +628,14 @@ i.respons {
   font-weight: 600;
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
-  color: #050d18;
+  color: var(--mcolor);
   margin-bottom: 10px;
 }
 
 .resume .resume-item h5 {
   font-size: 16px;
-  background: #e4edf9;
+  background: var(--xlcolor);
+  border-radius: 20px;
   padding: 5px 15px;
   display: inline-block;
   font-weight: 600;
@@ -691,9 +663,17 @@ i.respons {
   left: -9px;
   top: 0;
   background: #fff;
-  border: 2px solid #1f5297;
+  border: 2px solid var(--lgreen);
 }
 
+.resume ul{
+  list-style: none;
+  display: contents;
+}
+
+.resume i{
+  padding-right: 10px;
+}
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
@@ -1012,22 +992,27 @@ i.respons {
 --------------------------------------------------------------*/
 .contact {
   padding-bottom: 130px;
+  background-color: var(--xxlcolor);
+  border: 1px solid var(--xlcolor);
 }
 
 .contact .info {
   padding: 30px;
-  background: #fff;
+  background: var(--xxlcolor);
+  border: 2px solid var(--lcolor);
+  border-radius: 20px;
   width: 100%;
   box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
 }
 
 .contact .info i {
   font-size: 20px;
-  color: #149ddd;
+  color: var(--dgreen);
   float: left;
   width: 44px;
   height: 44px;
-  background: #dff3fc;
+  background: var(--mcolor);
+  border: 2px solid var(--xlcolor);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1040,14 +1025,15 @@ i.respons {
   font-size: 22px;
   font-weight: 600;
   margin-bottom: 5px;
-  color: #050d18;
+  color: var(--scolor);
+  font-family:'Chakra Petch', sans-serif ;
 }
 
 .contact .info p {
   padding: 0 0 10px 60px;
   margin-bottom: 20px;
   font-size: 14px;
-  color: #173b6c;
+  color: var(--mcolor);
 }
 
 .contact .info .email p {
@@ -1074,21 +1060,23 @@ i.respons {
 }
 
 .contact .info .social-links a:hover {
-  background: #149ddd;
-  color: #fff;
+  background: var(--lgreen);
+  color: white;
 }
 
 .contact .info .email:hover i,
 .contact .info .address:hover i,
 .contact .info .phone:hover i {
-  background: #149ddd;
-  color: #fff;
+  background: var(--lgreen);
+  color: white;
 }
 
 .contact .php-email-form {
   width: 100%;
   padding: 30px;
-  background: #fff;
+  background: var(--xxlcolor);
+  border: 2px solid var(--lcolor);
+  border-radius: 20px;
   box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
 }
 
@@ -1156,9 +1144,12 @@ i.respons {
 
 .contact .php-email-form input,
 .contact .php-email-form textarea {
-  border-radius: 0;
+  border-radius: 10px;
+  border: 1px solid var(--xlcolor);
   box-shadow: none;
   font-size: 14px;
+  color: white;
+  background-color: var(--xxlcolor);
 }
 
 .contact .php-email-form input {
@@ -1170,17 +1161,26 @@ i.respons {
 }
 
 .contact .php-email-form button[type=submit] {
-  background: #149ddd;
-  border: 0;
+  background: var(--lcolor);
+  border: 0 solid var(--xlcolor);
   padding: 10px 24px;
   color: #fff;
   transition: 0.4s;
-  border-radius: 4px;
+  border-radius: 10px;
 }
 
 .contact .php-email-form button[type=submit]:hover {
-  background: #37b3ed;
+  background: var(--lgreen);
+  color: var(--xxlcolor);
 }
+
+
+.contacthover{
+  border: 2px solid var(--lgreen);
+  background-color: white;
+  color: white;
+}
+
 
 @-webkit-keyframes animate-loading {
   0% {
@@ -1281,4 +1281,19 @@ i.respons {
     width: auto;
     padding-right: 20px 15px;
   }
+}
+
+/* scroll bar */
+
+html::-webkit-scrollbar {
+  width: 10px; 
+}
+
+html::-webkit-scrollbar-track {
+background-color: var(--xxlcolor);
+}
+
+html::-webkit-scrollbar-thumb {
+background: #4e4e4e;
+border-radius: 25px;
 }
