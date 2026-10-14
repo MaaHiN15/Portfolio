@@ -1,0 +1,593 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mahendran E · Site Reliability Engineer</title>
+  <meta name="description" content="Mahendran E, Site Reliability Engineer in Abu Dhabi. Keeps identity-verification and fintech platforms for major UAE banks running at 1,000+ requests per second across AWS, Azure, Oracle Cloud and on-premises.">
+  <meta name="author" content="Mahendran E">
+  <link rel="canonical" href="https://maahin15.github.io/">
+
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="Mahendran E · Site Reliability Engineer">
+  <meta property="og:description" content="I keep production boring. Kubernetes, observability, incident response and multi-cloud for platforms serving 1,000+ requests per second.">
+  <meta property="og:url" content="https://maahin15.github.io/">
+  <meta name="twitter:card" content="summary">
+  <meta name="theme-color" content="#FFF5F5">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&family=Google+Sans+Code:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+
+  <!-- Light is the default; a saved choice wins. Set before first paint. -->
+  <script>
+    try { if (localStorage.getItem('theme') === 'dark') document.documentElement.dataset.theme = 'dark'; } catch (e) {}
+    document.documentElement.classList.add('js');
+  </script>
+  <script data-goatcounter="https://maahin15.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="progress" aria-hidden="true"></div>
+
+  <!-- ================= NAV ================= -->
+  <header class="nav">
+    <div class="nav-pill">
+      <a class="brand" href="#top" aria-label="Mahendran E, back to top">
+        <span class="brand-blob">ME</span>
+      </a>
+      <nav aria-label="Sections">
+        <ul class="nav-links">
+          <li><a href="#numbers">Numbers</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#incidents">Incidents</a></li>
+          <li><a href="#career">Career</a></li>
+          <li><a href="#toolbox">Toolbox</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="theme-toggle" type="button" aria-label="Switch to dark mode">
+        <svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        <svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+      </button>
+      <a class="btn btn-sm js-confetti" href="Mahendran_E_Site_Reliability_Engineer.pdf" download>Resume</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ================= HERO ================= -->
+    <section class="hero" id="top">
+      <div class="blob blob-a" aria-hidden="true"></div>
+      <div class="blob blob-b" aria-hidden="true"></div>
+
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <div class="pills" data-hero>
+            <span class="pill pill-live"><span class="live-dot" aria-hidden="true"></span>Site Reliability Engineer</span>
+            <span class="pill">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
+              Abu Dhabi, UAE
+            </span>
+          </div>
+
+          <h1 class="name" data-split>Mahendran E</h1>
+
+          <p class="tagline" data-hero>I keep production
+            <span class="boring">boring<svg class="squiggle" viewBox="0 0 200 20" preserveAspectRatio="none" aria-hidden="true"><path d="M3 12 C 25 3, 40 19, 62 10 S 100 3, 122 11 S 160 18, 197 7"/></svg></span>.<sup>*</sup>
+          </p>
+
+          <p class="lead" data-hero>I run identity-verification and fintech platforms for major UAE banks at
+            <mark>1,000+ requests a second</mark>, across AWS, Azure, Oracle Cloud and on-premises.</p>
+
+          <div class="cta" data-hero>
+            <a class="btn js-confetti" href="Mahendran_E_Site_Reliability_Engineer.pdf" download>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M4 20h16"/></svg>
+              Download resume
+            </a>
+            <button class="email-chip js-copy" type="button" data-copy="mahendranmaahin007@gmail.com" aria-label="Copy email address mahendranmaahin007@gmail.com">
+              <span>mahendranmaahin007@gmail.com</span>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg>
+            </button>
+          </div>
+
+          <div class="hero-foot" data-hero>
+            <ul class="round-icons" aria-label="Other contacts">
+              <li><a href="tel:+971542887345" aria-label="Call" title="Call">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
+              </a></li>
+              <li><a href="https://linkedin.com/in/mahendranmaahin" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2zM4 2a2 2 0 1 1 0 4 2 2 0 0 1 0-4z"/></svg>
+              </a></li>
+            </ul>
+            <p class="footnote"><sup>*</sup>The good kind of boring: 99.9% uptime, quiet pagers.</p>
+          </div>
+        </div>
+
+        <!-- Mascot scene -->
+        <div class="scene" aria-label="Illustration: a friendly cartoon server holding a coffee mug, with draggable tech stickers around it" role="img">
+          <div class="bubble" aria-live="polite"><span class="bubble-text">All systems green ✓</span><span class="caret" aria-hidden="true"></span></div>
+
+          <svg class="mascot" viewBox="0 0 340 380" aria-hidden="true">
+            <ellipse class="m-shadow" cx="170" cy="356" rx="96" ry="12"/>
+            <g class="m-body">
+              <!-- antenna -->
+              <line class="m-line" x1="170" y1="62" x2="170" y2="32"/>
+              <circle class="m-antenna" cx="170" cy="24" r="11"/>
+              <!-- waving arm -->
+              <g class="m-wave">
+                <path class="m-line" d="M74 228 C 50 214, 40 196, 38 172"/>
+                <circle class="m-hand" cx="37" cy="164" r="13"/>
+              </g>
+              <!-- mug arm -->
+              <path class="m-line" d="M266 232 C 284 228, 292 214, 294 202"/>
+              <g class="m-mug">
+                <path class="m-steam s1" d="M290 160 c -6 -8, 6 -12, 0 -22"/>
+                <path class="m-steam s2" d="M304 160 c -6 -8, 6 -12, 0 -22"/>
+                <rect class="m-mugbody" x="278" y="168" width="38" height="40" rx="7"/>
+                <path class="m-line thin" d="M316 178 c 14 0, 14 20, 0 20"/>
+              </g>
+              <!-- body -->
+              <rect class="m-case" x="66" y="62" width="208" height="262" rx="38"/>
+              <!-- face -->
+              <rect class="m-face" x="92" y="88" width="156" height="100" rx="26"/>
+              <g class="m-eye" data-eye>
+                <circle class="m-eyeball" cx="138" cy="130" r="17"/>
+                <circle class="m-pupil" cx="138" cy="130" r="7.5"/>
+              </g>
+              <g class="m-eye" data-eye>
+                <circle class="m-eyeball" cx="202" cy="130" r="17"/>
+                <circle class="m-pupil" cx="202" cy="130" r="7.5"/>
+              </g>
+              <ellipse class="m-cheek" cx="114" cy="164" rx="11" ry="6.5"/>
+              <ellipse class="m-cheek" cx="226" cy="164" rx="11" ry="6.5"/>
+              <path class="m-line thin m-mouth" d="M155 158 Q 170 173, 185 158"/>
+              <!-- drawers -->
+              <rect class="m-drawer" x="92" y="204" width="156" height="38" rx="12"/>
+              <circle class="m-led l1" cx="114" cy="223" r="5.5"/>
+              <circle class="m-led l2" cx="132" cy="223" r="5.5"/>
+              <line class="m-line thin" x1="160" y1="223" x2="228" y2="223"/>
+              <rect class="m-drawer" x="92" y="252" width="156" height="38" rx="12"/>
+              <circle class="m-led l3" cx="114" cy="271" r="5.5"/>
+              <circle class="m-led l4" cx="132" cy="271" r="5.5"/>
+              <line class="m-line thin" x1="160" y1="271" x2="228" y2="271"/>
+              <!-- feet -->
+              <rect class="m-foot" x="98" y="318" width="44" height="24" rx="11"/>
+              <rect class="m-foot" x="198" y="318" width="44" height="24" rx="11"/>
+            </g>
+          </svg>
+
+          <svg class="ecg" viewBox="0 0 400 60" preserveAspectRatio="none" aria-hidden="true">
+            <path d="M0 34 H120 L132 34 L142 10 L154 54 L166 22 L174 34 H260 L270 34 L280 14 L292 50 L302 34 H400"/>
+          </svg>
+
+          <div class="sticker-layer">
+            <span class="sticker" style="--x:2%;--y:8%;--r:-12deg"><span class="sticker-in c-rose">Kubernetes</span></span>
+            <span class="sticker" style="--x:84%;--y:24%;--r:9deg"><span class="sticker-in c-peach">AWS</span></span>
+            <span class="sticker" style="--x:82%;--y:50%;--r:-7deg"><span class="sticker-in c-white">Azure</span></span>
+            <span class="sticker" style="--x:-2%;--y:52%;--r:8deg"><span class="sticker-in c-peach">OCI</span></span>
+            <span class="sticker" style="--x:70%;--y:80%;--r:6deg"><span class="sticker-in c-white">ClickHouse</span></span>
+            <span class="sticker" style="--x:4%;--y:82%;--r:-6deg"><span class="sticker-in c-rose">Terraform</span></span>
+          </div>
+          <p class="drag-hint" aria-hidden="true">↑ psst… the stickers are draggable</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= MARQUEE ================= -->
+    <div class="bands" aria-hidden="true">
+      <div class="band band-a"><div class="band-track">
+        <span>Kubernetes</span><i>✦</i><span>Observability</span><i>✦</i><span>Incident Response</span><i>✦</i><span>Multi-Cloud</span><i>✦</i><span>ClickHouse</span><i>✦</i><span>Terraform</span><i>✦</i><span>Disaster Recovery</span><i>✦</i><span>On-call</span><i>✦</i>
+        <span>Kubernetes</span><i>✦</i><span>Observability</span><i>✦</i><span>Incident Response</span><i>✦</i><span>Multi-Cloud</span><i>✦</i><span>ClickHouse</span><i>✦</i><span>Terraform</span><i>✦</i><span>Disaster Recovery</span><i>✦</i><span>On-call</span><i>✦</i>
+      </div></div>
+      <div class="band band-b"><div class="band-track">
+        <span>99.9% uptime</span><i>●</i><span>MTTD −60%</span><i>●</i><span>RTO −70%</span><i>●</i><span>150M vectors rebuilt</span><i>●</i><span>1,000+ servers</span><i>●</i><span>Zero data loss</span><i>●</i>
+        <span>99.9% uptime</span><i>●</i><span>MTTD −60%</span><i>●</i><span>RTO −70%</span><i>●</i><span>150M vectors rebuilt</span><i>●</i><span>1,000+ servers</span><i>●</i><span>Zero data loss</span><i>●</i>
+      </div></div>
+    </div>
+
+    <!-- ================= NUMBERS ================= -->
+    <section class="section" id="numbers">
+      <div class="wrap">
+        <h2 class="title"><span class="title-tag">01</span>By the numbers</h2>
+        <div class="numbers-grid">
+          <ul class="stickers">
+            <li class="stat c-peach" data-reveal><b data-count="3.5" data-decimals="1" data-suffix="+">3.5+</b><span>years in production infrastructure</span></li>
+            <li class="stat c-white" data-reveal><b data-count="1000" data-suffix="+">1,000+</b><span>servers, cloud and on-premises</span></li>
+            <li class="stat c-rose" data-reveal><b data-count="30" data-suffix="+">30+</b><span>environments across 10+ products</span></li>
+            <li class="stat c-white" data-reveal><b data-count="1000" data-suffix="+">1,000+</b><span>requests a second, served</span></li>
+            <li class="stat c-rose" data-reveal><b data-count="150" data-suffix="M+">150M+</b><span>face embeddings in vector search</span></li>
+            <li class="stat c-peach" data-reveal><b data-count="1" data-prefix="" data-suffix=" TB+">1 TB+</b><span>in PostgreSQL and 5 ClickHouse clusters</span></li>
+            <li class="stat c-white" data-reveal><b data-count="20" data-suffix="+">20+</b><span>stateful tools run as HA clusters</span></li>
+            <li class="stat c-peach" data-reveal><b data-count="4">4</b><span>engineers led on the DevOps/SRE team</span></li>
+          </ul>
+
+          <div class="receipt-wrap">
+            <div class="receipt" data-receipt>
+              <p class="r-head">RELIABILITY RECEIPT</p>
+              <p class="r-sub">Current role · Abu Dhabi</p>
+              <p class="r-rule">- - - - - - - - - - - - - - - - - -</p>
+              <dl class="r-items">
+                <div><dt>Uptime, DBs &amp; brokers</dt><dd>99.9%</dd></div>
+                <div><dt>Mean time to detect</dt><dd>−60%</dd></div>
+                <div><dt>Recovery time objective</dt><dd>−70%</dd></div>
+                <div><dt>Provisioning time</dt><dd>−75%</dd></div>
+                <div><dt>Deployment time</dt><dd>−65%</dd></div>
+                <div><dt>Node compute cost</dt><dd>−25%</dd></div>
+                <div><dt>Monthly cloud spend</dt><dd>−20%</dd></div>
+                <div><dt>Service onboarding</dt><dd>days → &lt;2h</dd></div>
+              </dl>
+              <p class="r-rule">- - - - - - - - - - - - - - - - - -</p>
+              <div class="r-total"><span>TOTAL</span><span>prod, kept boring</span></div>
+              <div class="r-barcode" aria-hidden="true"></div>
+              <p class="r-thanks">thanks for scrolling ♥</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ABOUT ================= -->
+    <section class="section soft" id="about">
+      <div class="wrap about">
+        <div class="about-quote" data-reveal>
+          <p class="title-tag">02 · about</p>
+          <blockquote>I fix <mark>causes</mark>, not symptoms.</blockquote>
+        </div>
+        <div class="about-text" data-reveal>
+          <p>I'm a Site Reliability Engineer with 3.5+ years keeping production infrastructure reliable at scale. Today I lead a
+            four-engineer DevOps/SRE team running 1,000+ servers across 30+ environments and 10+ identity-verification and
+            fintech products.</p>
+          <p>The job is everything that keeps things up: clustered PostgreSQL, ClickHouse, Kafka and Pulsar; Kubernetes on EKS,
+            AKS and OKE; vLLM on NVIDIA GPUs for AI face matching and document extraction; and the observability, backups and
+            runbooks that hold it all together. I own on-call and RCAs, and I handle production network and security escalations
+            directly with bank clients.</p>
+          <p>My rule of thumb: alert on disks before services fall over, keep every store rebuildable from a source of truth,
+            and turn every incident into a runbook.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= WORK ================= -->
+    <section class="section" id="work">
+      <div class="wrap">
+        <h2 class="title"><span class="title-tag">03</span>What I do all day</h2>
+        <div class="bento">
+          <article class="tile span-2 c-rose" data-reveal>
+            <svg class="doodle" viewBox="0 0 48 48" aria-hidden="true"><path class="d-fill-w" d="M12 34V24a12 12 0 0 1 24 0v10z"/><rect x="8" y="34" width="32" height="7" rx="2.5"/><path d="M24 6V2M9 11 6 8M39 11l3-3M3 24H1M47 24h-2"/><path d="M20 24a4 4 0 0 1 4-4"/></svg>
+            <h3>The pager stops with me</h3>
+            <p>I lead the 4-engineer DevOps/SRE team that keeps identity verification running for major UAE banks. When production breaks, I run the incident, find the root cause, write the RCA and ship the runbook. Network and security escalations come to me directly from bank clients.</p>
+            <p class="tile-meta"><b>1,000+</b> servers · <b>30+</b> environments · <b>10+</b> products</p>
+          </article>
+          <article class="tile span-2 c-white" data-reveal>
+            <svg class="doodle" viewBox="0 0 48 48" aria-hidden="true"><circle class="d-fill-p" cx="24" cy="24" r="15"/><circle class="d-fill-w" cx="24" cy="24" r="5"/><path d="M24 4v10M24 34v10M4 24h10M34 24h10M10 10l7 7M31 31l7 7M38 10l-7 7M17 31l-7 7"/></svg>
+            <h3>A Kubernetes platform 10+ products ship on</h3>
+            <p>One multi-tenant cluster per environment on EKS, AKS and OKE, with per-product node pools so interdependent services talk in-cluster. Istio ambient mTLS, Envoy Gateway, External Secrets, and a 7-tier Helm hierarchy every service inherits. A policy-gated CLI blocks bad configs before they reach a cluster.</p>
+            <p class="tile-meta">onboarding <b>days → &lt;2h</b> · node compute <b>−25%</b></p>
+          </article>
+          <article class="tile span-2 c-peach" data-reveal>
+            <svg class="doodle" viewBox="0 0 48 48" aria-hidden="true"><path class="d-fill-w" d="M13 36h23a8 8 0 0 0 1-16 12 12 0 0 0-23-3 9.5 9.5 0 0 0-1 19z"/><path d="M20 23l-4 4 4 4M28 23l4 4-4 4"/></svg>
+            <h3>Three clouds, one Terraform codebase</h3>
+            <p>Production hub-and-spoke landing zones on AWS, Azure and OCI, each split into about 15 layers with their own state, driven by YAML and checked by JSON Schema before a plan runs. I also imported an entire live Cloudflare account into Terraform with zero diff.</p>
+            <p class="tile-meta">provisioning <b>−75%</b> · <b>500+</b> DNS records imported</p>
+          </article>
+          <article class="tile c-white" data-reveal>
+            <svg class="doodle" viewBox="0 0 48 48" aria-hidden="true"><ellipse class="d-fill-r" cx="24" cy="10" rx="15" ry="5"/><path d="M9 10v28c0 2.8 6.7 5 15 5s15-2.2 15-5V10"/><path d="M9 19c0 2.8 6.7 5 15 5s15-2.2 15-5M9 28.5c0 2.8 6.7 5 15 5s15-2.2 15-5"/></svg>
+            <h3>Data that doesn't sleep</h3>
+            <p>5 ClickHouse clusters, Patroni PostgreSQL, Kafka and Pulsar holding 1 TB+ behind 1,000+ requests a second.</p>
+            <p class="tile-meta"><b>99.9%</b> uptime</p>
+          </article>
+          <article class="tile c-rose" data-reveal>
+            <svg class="doodle" viewBox="0 0 48 48" aria-hidden="true"><rect class="d-fill-w" x="12" y="12" width="24" height="24" rx="4"/><path d="M18 12V6M24 12V6M30 12V6M18 42v-6M24 42v-6M30 42v-6M12 18H6M12 30H6M42 18h-6M42 30h-6"/><path class="d-fill-r" d="M24 17l2 5 5 2-5 2-2 5-2-5-5-2 5-2z"/></svg>
+            <h3>GPUs in production</h3>
+            <p>vLLM on NVIDIA GPUs for AI face matching and document extraction, plus Milvus vector search across 150M+ face embeddings.</p>
+            <p class="tile-meta"><b>150M+</b> embeddings</p>
+          </article>
+          <article class="tile c-peach" data-reveal>
+            <svg class="doodle" viewBox="0 0 48 48" aria-hidden="true"><circle class="d-fill-p" cx="20" cy="20" r="14"/><path d="M11 24l5-6 4 4 7-8"/><path d="M30.5 30.5 43 43"/></svg>
+            <h3>See it before users do</h3>
+            <p>Prometheus, Alertmanager and Grafana, with OpenTelemetry and Vector shipping logs and traces into ClickHouse.</p>
+            <p class="tile-meta">MTTD <b>−60%</b></p>
+          </article>
+          <article class="tile c-white" data-reveal>
+            <svg class="doodle" viewBox="0 0 48 48" aria-hidden="true"><circle class="d-fill-w" cx="24" cy="24" r="18"/><circle cx="24" cy="24" r="8"/><circle class="d-ring" cx="24" cy="24" r="13"/></svg>
+            <h3>Restores, not hopes</h3>
+            <p>Incremental backups and automated restores for PostgreSQL, MongoDB, ClickHouse and Redis.</p>
+            <p class="tile-meta">RTO <b>−70%</b> · near-zero data loss</p>
+          </article>
+          <article class="tile span-2 c-rose" data-reveal>
+            <svg class="doodle" viewBox="0 0 48 48" aria-hidden="true"><circle class="d-fill-w" cx="9" cy="24" r="5"/><circle class="d-fill-p" cx="24" cy="24" r="5"/><circle class="d-fill-w" cx="39" cy="24" r="5"/><path d="M14 24h5M29 24h5"/><path d="M24 8v11M24 29v11M20 12l4-4 4 4M20 36l4 4 4-4"/></svg>
+            <h3>Pipelines with guardrails</h3>
+            <p>A Jenkins framework across 3+ controllers where every job is a YAML file and a 3-line Jenkinsfile, generated from Git with no clicking in the UI. Deploys pass kubeconform, Kyverno and kube-score before Helm runs, and ArgoCD keeps Git as the source of truth.</p>
+            <p class="tile-meta"><b>50+</b> jobs generated · one-line rollback</p>
+          </article>
+          <article class="tile span-2 c-peach" data-reveal>
+            <svg class="doodle" viewBox="0 0 48 48" aria-hidden="true"><path class="d-fill-w" d="M24 5l15 6v12c0 9.5-6.4 16.4-15 20-8.6-3.6-15-10.5-15-20V11z"/><path d="M17 24l5 5 9-10"/></svg>
+            <h3>Locked down for banks</h3>
+            <p>HashiCorp Vault across 100+ production VMs replaced hardcoded credentials. Customer-managed keys encrypt everything, SOPS/age keeps secrets out of Terraform state, and FortiGate VPNs, mTLS and WAF guard the edge. Built for PCI DSS.</p>
+            <p class="tile-meta">Vault · CMK · mTLS · WAF · PCI DSS</p>
+          </article>
+          <article class="tile span-2 tile-motto c-ink" data-reveal>
+            <p class="motto">“If it pages twice, it gets a runbook.”</p>
+            <p class="tile-meta">on-call motto</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= INCIDENTS ================= -->
+    <section class="section soft" id="incidents">
+      <div class="wrap">
+        <h2 class="title"><span class="title-tag">04</span>Incident comics</h2>
+        <p class="section-intro">Real outages from production, told in four panels. Each one started as “service down”. Each real cause was hiding underneath.</p>
+
+        <div class="tabs" role="tablist" aria-label="Incident episodes">
+          <button class="tab" role="tab" id="tab-1" aria-controls="ep-1" aria-selected="true">Ep. 1 · The /tmp gremlin</button>
+          <button class="tab" role="tab" id="tab-2" aria-controls="ep-2" aria-selected="false" tabindex="-1">Ep. 2 · One bad disk</button>
+          <button class="tab" role="tab" id="tab-3" aria-controls="ep-3" aria-selected="false" tabindex="-1">Ep. 3 · 150M vectors</button>
+        </div>
+
+        <div class="episode" role="tabpanel" id="ep-1" aria-labelledby="tab-1">
+          <h3 class="ep-title">The nightly job that ate <code>/tmp</code> <span>MinIO · object storage</span></h3>
+          <ol class="strip">
+            <li class="panel">
+              <p class="cap">1 · The page</p>
+              <div class="burst" aria-hidden="true"><span>BEEP!</span></div>
+              <p>MinIO-down page on a production cluster.</p>
+            </li>
+            <li class="panel">
+              <p class="cap">2 · The digging</p>
+              <p><code>df -h</code> showed <code>/tmp</code> at 100%. A daily <code>mlocate</code> (<code>updatedb</code>) cron job was indexing millions of object paths.</p>
+            </li>
+            <li class="panel">
+              <p class="cap">3 · The twist</p>
+              <p>Rebuilding its ~5 GB index needed ~10 GB of temp space. That filled the 10 GB <code>/tmp</code> and left MinIO stuck.</p>
+            </li>
+            <li class="panel">
+              <p class="cap">4 · The fix</p>
+              <p>Freed the space and removed <code>mlocate</code>: nothing on a storage server needs <code>locate</code>. It never came back.</p>
+              <span class="stamp" aria-hidden="true">RESOLVED</span>
+            </li>
+          </ol>
+          <p class="moral"><span>Moral of the story</span>Alert on the cause (disk), not just the symptom (service).</p>
+        </div>
+
+        <div class="episode" role="tabpanel" id="ep-2" aria-labelledby="tab-2" hidden>
+          <h3 class="ep-title">One bad disk, zero lost bytes <span>MinIO · erasure coding</span></h3>
+          <ol class="strip">
+            <li class="panel">
+              <p class="cap">1 · The page</p>
+              <div class="burst" aria-hidden="true"><span>BEEP!</span></div>
+              <p>MinIO-down alerts on a production cluster.</p>
+            </li>
+            <li class="panel">
+              <p class="cap">2 · The digging</p>
+              <p>MinIO logs, <code>dmesg</code>, <code>lsblk</code>, filesystem checks. One disk's filesystem was corrupted, and partition recovery failed.</p>
+            </li>
+            <li class="panel">
+              <p class="cap">3 · The insight</p>
+              <p>MinIO ran distributed with erasure coding, so no data lived only on that disk.</p>
+            </li>
+            <li class="panel">
+              <p class="cap">4 · The fix</p>
+              <p>Wiped, reformatted and remounted it, then let MinIO self-heal the shards from the cluster. Zero data loss.</p>
+              <span class="stamp" aria-hidden="true">RESOLVED</span>
+            </li>
+          </ol>
+          <p class="moral"><span>Moral of the story</span>When the redundancy exists, heal from parity instead of nursing doubtful hardware.</p>
+        </div>
+
+        <div class="episode" role="tabpanel" id="ep-3" aria-labelledby="tab-3" hidden>
+          <h3 class="ep-title">150 million vectors, rebuilt from the truth <span>Milvus · etcd · MinIO · ClickHouse</span></h3>
+          <ol class="strip">
+            <li class="panel">
+              <p class="cap">1 · The page</p>
+              <div class="burst" aria-hidden="true"><span>BEEP!</span></div>
+              <p>A server under the face-matching Milvus cluster filled its disk under live production traffic.</p>
+            </li>
+            <li class="panel">
+              <p class="cap">2 · The damage</p>
+              <p>Writes failed halfway. Segment objects in MinIO no longer matched the metadata in etcd, and reconciling them failed.</p>
+            </li>
+            <li class="panel">
+              <p class="cap">3 · The insight</p>
+              <p>The embeddings were never the source of truth. Every one also lived in ClickHouse.</p>
+            </li>
+            <li class="panel">
+              <p class="cap">4 · The fix</p>
+              <p>Wiped Milvus, MinIO, etcd and Pulsar, re-ingested ~150M embeddings from ClickHouse and rebuilt the indexes. No permanent data loss.</p>
+              <span class="stamp" aria-hidden="true">RESOLVED</span>
+            </li>
+          </ol>
+          <p class="moral"><span>Moral of the story</span>Make every serving store rebuildable from a durable system of record.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CAREER ================= -->
+    <section class="section" id="career">
+      <div class="wrap">
+        <h2 class="title"><span class="title-tag">05</span>The road so far</h2>
+        <div class="road">
+          <svg class="road-path" viewBox="0 0 40 1000" preserveAspectRatio="none" aria-hidden="true">
+            <path class="road-bg" d="M20 0 V1000"/>
+            <path class="road-fg" d="M20 0 V1000"/>
+          </svg>
+
+          <article class="stop stop-main" data-reveal>
+            <span class="flag c-rose" aria-hidden="true">NOW</span>
+            <p class="when">May 2025 – Present · Abu Dhabi, UAE</p>
+            <h3>Site Reliability Engineer</h3>
+            <p class="where">Eurusys <span>· internal transfer from Signzy Technologies</span></p>
+            <p class="stop-lead">I lead the 4-engineer DevOps/SRE team behind identity-verification and fintech products used by major UAE banks:
+              <b>1,000+ servers</b>, <b>30+ environments</b>, <b>10+ products</b> and <b>1,000+ requests a second</b> across AWS, Azure, Oracle Cloud and on-premises.</p>
+
+            <div class="groups">
+              <div class="group">
+                <h4>Own production</h4>
+                <ul>
+                  <li><b>Incident lead for bank-facing platforms.</b> I run on-call, RCAs, runbooks and SOPs, and handle network, security and DevOps escalations directly with bank clients.</li>
+                  <li><b>Recovered storage outages without losing data.</b> Rebuilt 150M Milvus vectors from ClickHouse after etcd/MinIO metadata drift, and healed a corrupted MinIO disk from erasure-coded parity.</li>
+                  <li><b>Cut mean time to detect by 60%</b> with Prometheus, Alertmanager and Grafana, plus OpenTelemetry and Vector pipelines into ClickStack, ClickHouse and Elasticsearch.</li>
+                  <li><b>Cut RTO by 70%</b> with incremental backups and automated restores in Python and Bash for PostgreSQL, MongoDB, ClickHouse and Redis.</li>
+                </ul>
+              </div>
+
+              <div class="group">
+                <h4>Build the platform</h4>
+                <ul>
+                  <li><b>Multi-tenant Kubernetes on EKS, AKS and OKE.</b> One shared cluster per environment with per-product node pools, Istio ambient mTLS, Envoy Gateway, External Secrets and per-product HAProxy database proxies. Cluster Autoscaler right-sizing cut node compute by 25%.</li>
+                  <li><b>A 7-tier Helm hierarchy</b> every service inherits: a foundation chart (namespaces, quotas, RBAC, NetworkPolicy, Pod Security Standards), product charts (HPA, PDB, topology spread, probes) and infrastructure charts.</li>
+                  <li><b>A policy-gated <code>k8s</code> deploy CLI</b> that renders, then runs kubeconform, Kyverno and kube-score before Helm applies anything. New-service onboarding went from days to under 2 hours.</li>
+                  <li><b>GitOps with ArgoCD</b> ApplicationSets and a Config Management Plugin running the same render pipeline, with Argo Rollouts evaluated for canary releases and metric-based rollback.</li>
+                  <li><b>AI infrastructure:</b> vLLM inference on NVIDIA GPUs in AWS for face matching and document extraction, and Milvus vector search over 150M+ face embeddings.</li>
+                </ul>
+              </div>
+
+              <div class="group">
+                <h4>Codify everything</h4>
+                <ul>
+                  <li><b>Landing zones on three clouds from one Terraform codebase.</b> Hub-and-spoke on AWS, Azure and OCI, about 15 layers per estate with independent state, driven by YAML with JSON Schema validation and plan-time guardrails.</li>
+                  <li><b>Imported a live Cloudflare account to zero diff:</b> 500+ DNS records plus Zero Trust Access, Tunnels/WARP and Gateway, using bulk import blocks, an auto-reconcile drift pipeline and <code>terraform test</code> gates.</li>
+                  <li><b>Seven platforms as code</b> (AWS, Azure, OCI, Cloudflare, GitLab, FortiGate and Nexus) with reusable multi-backend modules. Provisioning time dropped 75%.</li>
+                  <li><b>Ansible-built HA clusters of 20+ stateful tools</b> (Patroni, MongoDB, Redis, etcd, Kafka, Pulsar, ClickHouse, Milvus, Qdrant, MinIO, Consul, Vault) across RHEL, Oracle Linux, Ubuntu and Amazon Linux, at 99.9% uptime.</li>
+                  <li><b>A config-driven Jenkins framework</b> across 3+ controllers: one versioned Groovy library, each job a schema-checked YAML file plus a 3-line Jenkinsfile, generated by Job DSL. 50+ jobs, pinned per environment for one-line rollback, with gitleaks, shellcheck and approval gates built in.</li>
+                </ul>
+              </div>
+
+              <div class="group">
+                <h4>Cut cost &amp; risk</h4>
+                <ul>
+                  <li><b>Monthly cloud spend down about 20%</b> through backup/DR, observability and cost audits of the managed clusters.</li>
+                  <li><b>Customer-managed-key encryption everywhere</b>, with SOPS/age keeping secrets out of Terraform state, supporting PCI DSS.</li>
+                  <li><b>HashiCorp Vault across 100+ production VMs</b>, removing hardcoded credentials; moved Docker deployments to Kubernetes and cut deployment time by 65%.</li>
+                  <li><b>Self-hosted GitLab, Nexus, SonarQube, Listmonk and WireGuard</b>, cutting third-party licensing by 40%.</li>
+                  <li><b>AI-assisted, human-verified.</b> I use Claude daily for debugging, root-cause analysis and tooling; every suggested change is reviewed and validated before it reaches production.</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <article class="stop" data-reveal>
+            <span class="flag c-peach" aria-hidden="true">2023</span>
+            <p class="when">Jun 2023 – Apr 2025 · Chennai, India</p>
+            <h3>Software Engineer – DevOps</h3>
+            <p class="where">Mitsogo Technologies Inc.</p>
+            <p class="stop-lead">Where I learned to ship on AWS: pipelines, Terraform and security baselines for a multi-account microservice estate.</p>
+            <ul>
+              <li><b>GitLab CI/CD to Kubernetes:</b> pipelines that build, scan and deploy Dockerized microservices to Amazon EKS and EC2.</li>
+              <li><b>Terraform modules for microservice data infrastructure</b> (RDS, ElastiCache, Amazon MQ, Cognito, CloudWatch), cutting infrastructure deployment time by 80%.</li>
+              <li><b>Multi-account AWS:</b> IAM, VPC networking and account-level security baselines across the company's accounts.</li>
+              <li><b>Hardened the supply chain:</b> Dockerfiles and Kubernetes manifests checked with image scanning and security baselines.</li>
+              <li><b>The edge:</b> CloudFront with an Nginx reverse proxy, TLS and AWS WAF, benchmarked with AWS Security Hub.</li>
+            </ul>
+          </article>
+
+          <article class="stop stop-start" data-reveal>
+            <span class="flag c-white" aria-hidden="true">2019</span>
+            <p class="when">Aug 2019 – May 2023 · Tamil Nadu, India</p>
+            <h3>B.E. Computer Science</h3>
+            <p class="where">Government College of Engineering Srirangam</p>
+            <p class="pub">Published <a href="https://doi.org/10.5281/zenodo.7883225" target="_blank" rel="noopener">Automated Word App Using DevOps Technology</a> (Zenodo, May 2023).</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= TOOLBOX ================= -->
+    <section class="section soft" id="toolbox">
+      <div class="wrap">
+        <h2 class="title"><span class="title-tag">06</span>The toolbox</h2>
+        <div class="drawers">
+          <div class="drawer" data-reveal><h3 class="c-rose">Observability</h3><ul class="chips"><li>Prometheus</li><li>Alertmanager</li><li>Grafana</li><li>OpenTelemetry</li><li>Vector</li><li>ClickStack (HyperDX)</li><li>Elasticsearch</li></ul></div>
+          <div class="drawer" data-reveal><h3 class="c-peach">Kubernetes &amp; containers</h3><ul class="chips"><li>Kubernetes</li><li>Docker</li><li>Helm</li><li>ArgoCD</li><li>Argo Rollouts</li><li>Istio Ambient</li><li>Envoy Gateway</li><li>Kyverno</li><li>External Secrets</li><li>Cluster Autoscaler</li></ul></div>
+          <div class="drawer" data-reveal><h3 class="c-rose">Databases &amp; messaging</h3><ul class="chips"><li>PostgreSQL (Patroni)</li><li>ClickHouse</li><li>MongoDB</li><li>Redis</li><li>etcd</li><li>Milvus</li><li>Qdrant</li><li>MinIO</li><li>Kafka</li><li>Pulsar</li></ul></div>
+          <div class="drawer" data-reveal><h3 class="c-peach">Cloud</h3><ul class="chips"><li>AWS</li><li>Azure</li><li>Oracle Cloud (OCI)</li><li>Cloudflare</li><li>EKS</li><li>AKS</li><li>OKE</li></ul></div>
+          <div class="drawer" data-reveal><h3 class="c-rose">IaC &amp; CI/CD</h3><ul class="chips"><li>Terraform</li><li>Ansible</li><li>SOPS / age</li><li>GitLab CI/CD</li><li>Jenkins</li><li>GitHub Actions</li><li>Azure DevOps</li></ul></div>
+          <div class="drawer" data-reveal><h3 class="c-peach">Networking &amp; security</h3><ul class="chips"><li>TCP/IP</li><li>DNS</li><li>FortiGate</li><li>WireGuard</li><li>Nginx</li><li>Traefik</li><li>HAProxy</li><li>Consul</li><li>HashiCorp Vault</li><li>mTLS</li><li>WAF</li><li>PCI DSS</li></ul></div>
+          <div class="drawer" data-reveal><h3 class="c-rose">Linux &amp; languages</h3><ul class="chips"><li>RHEL</li><li>Oracle Linux</li><li>Ubuntu</li><li>Amazon Linux</li><li>Bash</li><li>Python</li><li>SQL</li></ul></div>
+          <div class="drawer" data-reveal><h3 class="c-peach">AI infrastructure</h3><ul class="chips"><li>vLLM</li><li>NVIDIA GPUs</li><li>LLM inference</li><li>Vector databases</li></ul></div>
+          <div class="drawer" data-reveal><h3 class="c-rose">Practices</h3><ul class="chips"><li>SLIs / SLOs</li><li>Incident management</li><li>On-call</li><li>RCA / postmortems</li><li>Disaster recovery</li><li>Capacity planning</li><li>GitOps</li></ul></div>
+        </div>
+
+        <h3 class="sub-title">Badges</h3>
+        <ul class="badges">
+          <li class="badge" data-reveal>
+            <svg class="badge-ring" viewBox="0 0 160 160" aria-hidden="true"><defs><path id="ring" d="M80 80 m-62 0 a62 62 0 1 1 124 0 a62 62 0 1 1 -124 0"/></defs><text><textPath href="#ring">AWS CERTIFIED ✦ AWS CERTIFIED ✦ AWS CERTIFIED ✦ </textPath></text></svg>
+            <div class="badge-core c-rose"><b>AWS</b><span>Solutions Architect<br>Associate</span></div>
+          </li>
+          <li class="badge" data-reveal>
+            <svg class="badge-ring" viewBox="0 0 160 160" aria-hidden="true"><text><textPath href="#ring">AWS CERTIFIED ✦ AWS CERTIFIED ✦ AWS CERTIFIED ✦ </textPath></text></svg>
+            <div class="badge-core c-peach"><b>AWS</b><span>Developer<br>Associate</span></div>
+          </li>
+          <li class="badge" data-reveal>
+            <svg class="badge-ring" viewBox="0 0 160 160" aria-hidden="true"><text><textPath href="#ring">AWS CERTIFIED ✦ AWS CERTIFIED ✦ AWS CERTIFIED ✦ </textPath></text></svg>
+            <div class="badge-core c-white"><b>AWS</b><span>Cloud<br>Practitioner</span></div>
+          </li>
+          <li class="badge badge-pending" data-reveal>
+            <svg class="badge-ring" viewBox="0 0 160 160" aria-hidden="true"><text><textPath href="#ring">IN PROGRESS ✦ IN PROGRESS ✦ IN PROGRESS ✦ </textPath></text></svg>
+            <div class="badge-core"><b>CKA</b><span>Kubernetes<br>Administrator</span></div>
+            <span class="ribbon">expected Nov 2026</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section class="section contact" id="contact">
+      <div class="wrap contact-grid">
+        <div class="contact-copy" data-reveal>
+          <p class="title-tag">07 · contact</p>
+          <h2>Need someone to<br>keep prod <mark>boring</mark>?</h2>
+          <p>I'm open to Site Reliability Engineering roles. Email is the fastest way to reach me.</p>
+          <div class="cta">
+            <a class="btn" href="mailto:mahendranmaahin007@gmail.com">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+              Send me a page
+            </a>
+            <a class="btn btn-ghost js-confetti" href="Mahendran_E_Site_Reliability_Engineer.pdf" download>Download resume</a>
+          </div>
+          <div class="hero-foot">
+            <button class="email-chip js-copy" type="button" data-copy="mahendranmaahin007@gmail.com" aria-label="Copy email address mahendranmaahin007@gmail.com">
+              <span>mahendranmaahin007@gmail.com</span>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg>
+            </button>
+            <ul class="round-icons" aria-label="Other contacts">
+              <li><a href="tel:+971542887345" aria-label="Call" title="Call">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
+              </a></li>
+              <li><a href="https://linkedin.com/in/mahendranmaahin" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2zM4 2a2 2 0 1 1 0 4 2 2 0 0 1 0-4z"/></svg>
+              </a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="pager-wrap" aria-hidden="true">
+          <div class="pager">
+            <span class="pager-antenna"></span>
+            <div class="pager-screen"><span class="pager-text">NEW PAGE ▸ hire an SRE?</span><span class="caret"></span></div>
+            <div class="pager-buttons"><span></span><span></span><span class="pager-led"></span></div>
+          </div>
+          <p class="pager-label">beep beep ↑</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <p>© 2026 Mahendran E · Abu Dhabi</p>
+      <p>Hand-built, served static. No servers were harmed.</p>
+      <a class="to-top" href="#top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <div class="toast" role="status" aria-live="polite"></div>
+
+  <script src="assets/vendor/gsap.min.js" defer></script>
+  <script src="assets/vendor/ScrollTrigger.min.js" defer></script>
+  <script src="assets/main.js" defer></script>
+</body>
+</html>
